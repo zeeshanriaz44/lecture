@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="usertem();  return false  ">
+      <h1>temApp</h1>
+      <label for="tmapp">enter your tep</label>
+      <input type="number" name="" id="tem1" placeholder="hott,cold,freez" />
+      <input type="submit" value="check" />
+      <h1 id="res"></h1>
+    </form>
+
+    <script>
+      function usertem() {
+        let usertem = document.querySelector("#tem1").value;
+        let city = prompt("enter your city name");
+        if ((usertem >= 90 && city == "lahore") || city == "Lahore") {
+          document.querySelector("#res").innerHTML = `your tem is hot ${city}`;
+        } else if ((usertem >= 50 && city == "isb") || city == "Isb") {
+          document.querySelector(
+            "#res"
+          ).innerHTML = `your tem is normal${city}`;
+        } else if ((usertem < 3 && city == "rohi") || city == "Rohi") {
+          document.querySelector("#res").innerHTML = `your tem is freez${city}`;
+        } else {
+          document.querySelector("#res").innerHTML = `your wrong input ${city}`;
+        }
+      }
+    </script>
+  </body>
+</html>

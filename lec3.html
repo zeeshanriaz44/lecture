@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+
+      caption {
+        display: table-caption;
+        text-align: center;
+      }
+      td:nth-child(even) {
+        background-color: blueviolet;
+      }
+      th:nth-child(odd) {
+        background-color: yellow;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      table {
+        border-spacing: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>form tag and all inputs</h1>
+    <form action="">
+      <p><label for="">first name</label></p>
+      <input
+        type="text"
+        name="flrstname"
+        id=""
+        placeholder="enter your first name"
+        required
+      />
+      <p><label for="">last Name</label></p>
+      <input
+        type="text"
+        name=""
+        id=""
+        placeholder="enter your last name"
+        required
+      />
+      <p><label for="">password</label></p>
+      <input
+        type="password"
+        name=""
+        id=""
+        placeholder="enter password"
+        required
+      />
+      <p><label for="">Mail</label></p>
+      <input type="email" name="email" id="" />
+      <p><label for="">select gender</label></p>
+      <input type="radio" name="gender" id="" value="man" /> male <br />
+      <input type="radio" name="gender" id="" value="man" /> fe-male <br />
+      <input type="radio" name="gender" id="" value="man" /> other
+      <p><label for="">select any department</label></p>
+      <input type="checkbox" name="chexbox" id="" required /> english <br />
+      <input type="checkbox" name="chexbox" id="" required /> urdu <br />
+      <input type="checkbox" name="chexbox" id="" required /> physics <br />
+      <input type="checkbox" name="chexbox" id="" required /> chemistey<br />
+      <input type="checkbox" name="chexbox" id="" required /> botany <br />
+
+      <p><label for="">color</label></p>
+      <input type="color" name="" id="" />
+      <p><label for="">select file</label></p>
+      <input type="file" name="" id="" />
+      <p><label for="">hidden file</label></p>
+      <input type="hidden" name="" />
+      <p><label for="">image field</label></p>
+      <input type="image" src="" alt="" />
+      <p><label for="">enter number </label></p>
+      <input type="number" name="" id="" />
+      <p><label for="">slect range</label></p>
+      <input type="range" name="" id="" />
+      <p><label for="">search</label></p>
+      <input type="search" name="" id="" />
+      <p><label for="">telephone</label></p>
+      <input type="tel" name="" id="" />
+      <p><label for="">time</label></p>
+      <input type="time" name="" id="" />
+      <p><label for="">date</label></p>
+      <input type="date" name="" id="" />
+      <p><label for="">time date local</label></p>
+      <input type="datetime-local" name="" id="" />
+      <p><label for="">week</label></p>
+      <input type="week" name="" id="" />
+      <p><label for="">month</label></p>
+      <input type="month" name="" id="" />
+      <p><label for="">url</label></p>
+      <input type="url" name="" id="" />
+      <p><label for="">select countries</label></p>
+      <select name="" id="">
+        <option value="please select">please select</option>
+        <option value="pakistan">pakistan</option>
+        <option value="india">india</option>
+        <option value="chaina">chaina</option>
+        <option value="bagladash">bagladash</option>
+      </select>
+      <br />
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="enter your addres"
+      ></textarea>
+      <br />
+      <br />
+
+      <input type="submit" value="submit" /> <br />
+      <br />
+      <input type="reset" value="reset" />
+    </form>
+
+    <h1>table and its attributties</h1>
+    <table>
+      <caption>
+        student record
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>class</th>
+        <th>roll number</th>
+        <th>marks</th>
+        <th>total marks</th>
+      </tr>
+      <tr>
+        <td>zeeshan riaz</td>
+        <td>12</td>
+        <td>20</td>
+        <td>500</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>riaz</td>
+        <td>12</td>
+        <td>26</td>
+        <td>300</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>saeed</td>
+        <td>12</td>
+        <td>27</td>
+        <td>200</td>
+        <td>600</td>
+      </tr>
+    </table>
+
+    <h1>vertical table</h1>
+    <table>
+      <tr>
+        <th>firstname</th>
+        <td>zeeshan</td>
+        <td>riaz</td>
+      </tr>
+      <tr>
+        <th>firstname</th>
+        <td>riaz</td>
+        <td>affan</td>
+      </tr>
+    </table>
+  </body>
+</html>

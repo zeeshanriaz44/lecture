@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>switch statment</h1>
+    <h2>arrrayand update the array and calling array</h2>
+
+    <script>
+      //   let input = prompt("enter your fruit name");
+      //   switch (input) {
+      //     case "mango":
+      //     case "banana":
+      //       console.log("it was the mango field");
+      //       break;
+      //     case "orange":
+      //       console.log("orange field");
+      //       break;
+      //     default:
+      //       console.log("it was the wrong input");
+      //   }
+
+      //   let name_student = [
+      //     "ali",
+      //     "ahmad",
+      //     "zeeshan",
+      //     ["english", 600, ["chem", 800]],
+      //     ["urdu", "physics"],
+      //     "duad",
+      //     30,
+      //     4.5,
+      //   ];
+      //   name_student[0] = "asad";
+      //   console.log()
+      //   console.log(name_student[3][2][0]);
+      //   console.log(name_student[4][0]);
+
+      //   let student = ["ali", "8th", 35];
+      //   let [name, classes, roll] = student;
+      //   console.log(name);
+
+      // let student = ["ahmad", "6th", 78];
+      // let [name, cls, rollnumber] = student;
+      // console.log(name);
+
+      // 1 "y" and "yes " countinue......
+      // 0 n and "no"...."end...."
+
+      let input = "n";
+      switch (input) {
+        case 1:
+        // console.log("countinue....");
+        // break;
+        case "y":
+        // console.log("countinue....");
+        // break;
+        case "yes":
+          console.log("countinue....");
+          break;
+        case 0:
+        // console.log("end........");
+        // break;
+        case "n":
+        // console.log("end........");
+        // break;
+        case "no":
+          console.log("end........");
+          break;
+        default:
+          console.log("wrong input");
+      }
+
+      // array and update the array and distruing
+
+      let subject = ["english", "urdu", "phy", "chem", "urdu"];
+      // update array
+      subject[2] = 34;
+      console.log(subject);
+      console.log(subject[1]);
+
+      let student = ["zeeshan", "ali", ["riaz", 34], 35, "rutba"];
+      console.log(student[2][1]);
+
+      let student1 = [
+        "zeeshan",
+        "ali",
+        ["riaz", 34, ["phy", "chem"]],
+        35,
+        "rutba",
+      ];
+      console.log(student[2][3][0]);
+
+      /// de structuring array....
+
+      let marks = ["ali", "9th", 20, 500];
+      let [name, cls, rollnumb, mar] = marks;
+      console.log(name);
+      console.log(cls);
+    </script>
+  </body>
+</html>
